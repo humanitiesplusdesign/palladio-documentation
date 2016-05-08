@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/ed/texts/releasenotes/2015-10-21/"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="The Palladio 1.1 Release" />
+  <meta name="DC.creator" content="Nicole Coleman" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Ed." />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="The Palladio 1.1 Release"/>
+  <meta property="og:author" content="Nicole Coleman"/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://elotroalex.github.io"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      The Palladio 1.1 Release
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/ed/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/ed/public/css/ed.css"/>
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ed/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/ed/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/ed/atom.xml"/>
+</head>
+
+
+  <body>
+
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/ed/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/credits/">Credits</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/documentation/">Documentation</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://elotroalex.github.io/ed/">Annotate me</a>
+    <a class="sidebar-nav-item" href="https://github.com/elotroalex/ed" target="_blank">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v0.0.5</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Distributed with an MIT license.</p>
+  </div>
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/ed/" title="Home">Ed.</a>
+            <br><small>A Jekyll theme for minimal editions</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="narrative">
+  <h1 class="post-title">The Palladio 1.1 Release</h1>
+  <!-- <p class="citation"> by Nicole Coleman</p> -->
+  <!-- date: 2015-10-21 14:50:22
+categories: release-notes
+published: true
+tags: front
+excerpt: "Many bug fixes. Performance improvements. New features for the map view and the timespan." -->
+
+<p><em>Release notes 2015-10-21</em></p>
+
+<hr />
+
+<p><a href="http://palladio.designhumanities.org/">Check out version 1.1</a></p>
+
+<h2 id="enhancements">Enhancements</h2>
+<ol>
+  <li>General: We added a progress indicator to let you know when rendering is happening. Look for a swoosh around the Palladio “P” in the upper left corner.</li>
+  <li>Data Refine: Allow “ignore” option for special characters in the edit dimension view.</li>
+  <li>Data Refine: Red dot goes to gray for a reviewed/edited/verified dimension.</li>
+  <li>Map view: Allow the use of WMS URLS. YAY!!!</li>
+  <li>Map view: improvements to map data rendering time.</li>
+  <li>Map view: We have removed the ‘mouseclick to filter’ on the map points. We will be replacing this with a mouseclick for popover that will give more detailed information about a point on the map than we see in the tooltip.</li>
+  <li>Timespan: Add the group name to the tooltip.</li>
+  <li>Timespan: Highlight timespans on mouseover to clarify for which timespan the tooltip is displayed.</li>
+  <li>Timespan: Enable grouping of timespans by another dimension (hovering will highlight all spans related to a record if a span appears in more than one group due to a multi-value field).</li>
+  <li>Facet Filter: show ([number selected out of] / [total number]) for each dimension. We need to let people know at a glance how many of a thing they are seeing in a view. We can do this easily with FF instead of mucking up the interface with more information.</li>
+  <li>Facet Filter: Performance improvement in facet filter by using filterExact when possible.</li>
+  <li>Saving a project: Add date to metadata per project (more coming)</li>
+  <li>Saving a project: save files can reference external data (performance improvement). Including toggle option so that user can control if data is saved along with Palladio save file or is referenced in a remote location. Only available if file is loaded from URL, not if data is dragged or pasted into Palladio directly. Try putting the URL of a Dropbox file in your Public folder where you normally paste your data.</li>
+  <li>Saving a project: Now you can save a project from Safari browser! The save file name will be “Unknown.” You’ll need to rename it. At least the download works.</li>
+</ol>
+
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ol>
+  <li>Timespan: The bar layout was displaying duplicate values.</li>
+  <li>Facet filter: fixed a bug where the clear/remove controls stopped appearing.</li>
+  <li>Map view: Fixed a bug that caused the legend graphics to appear squished.</li>
+  <li>Data Refine: We no longer flag the data format “Coordinates” for review because of commas and dashes.</li>
+  <li>Map View: At the request of our friends at Mapbox, we added Mapbox branding when using Mapbox tiles.</li>
+  <li>Saving a project: Fixed a bug where saving a project would kill links/extensions.</li>
+  <li>General: Fixed a bug where font-awesome drag icon was not appearing.</li>
+  <li>Facet Filter: Fixed a bug where adding a dimension triggered multiple updates, causing slowness.</li>
+  <li>Data Refine: For a while, if you needed to remove a table that was extended from the primary table in order to fix it and re-load it, the re-load would fail. That has been fixed.</li>
+  <li>Timespan Filter: Fixed a problem where filter settings were not saved with the Palladio save file (download).</li>
+  <li>Facet Filter: Fixed a display problem that caused dimensions to stack.</li>
+  <li>Timespan Filter: Fixed a problem where, if a filter is already in place when the timespan is added, then the filter is removed, the lines will overflow the view area.</li>
+</ol>
+
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

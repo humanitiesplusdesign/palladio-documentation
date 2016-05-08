@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/ed/texts/releasenotes/2014-07-31/"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="Palladio Release Notes: 0.6.0" />
+  <meta name="DC.creator" content="Ethan Jewett" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Ed." />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Palladio Release Notes: 0.6.0"/>
+  <meta property="og:author" content="Ethan Jewett"/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://elotroalex.github.io"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      Palladio Release Notes: 0.6.0
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/ed/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/ed/public/css/ed.css"/>
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ed/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/ed/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/ed/atom.xml"/>
+</head>
+
+
+  <body>
+
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/ed/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/credits/">Credits</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/documentation/">Documentation</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://elotroalex.github.io/ed/">Annotate me</a>
+    <a class="sidebar-nav-item" href="https://github.com/elotroalex/ed" target="_blank">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v0.0.5</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Distributed with an MIT license.</p>
+  </div>
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/ed/" title="Home">Ed.</a>
+            <br><small>A Jekyll theme for minimal editions</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="narrative">
+  <h1 class="post-title">Palladio Release Notes: 0.6.0</h1>
+  <!-- <p class="citation"> by Ethan Jewett</p> -->
+  <!-- date:   2014-07-31 09:00:00
+categories: release-notes
+published: true
+tags: front
+excerpt: "New features and bug fixes in release 0.6.0" -->
+<p><em>Release notes 2014-07-31</em></p>
+
+<hr />
+
+<h2 id="new-features">New Features</h2>
+
+<p><strong>Redesign</strong></p>
+
+<p>An updated design across the application, including a new start page with extended explanations of functionality.</p>
+
+<p><strong>TimeSpan filter component</strong></p>
+
+<p>A new filter type is introduced that allows visualization and filtering of records based on a start date and an end date. We offer 2 view options in this filter: a horizontal slope chart (the ‘Parallel’ subview), and a Gannt-like view (the ‘Bars ‘subview).</p>
+
+<p><strong>List view changes, and export option</strong></p>
+
+<p>The list view has been reworked to provide a more guided experience, more intuitive display of multiple values, and an option to export the current display as a CSV. When navigating to the list view, a user must now choose a primary row dimension before any data is displayed. Additional dimensions can then be selected to display as informational columns. Columns can be reordered by dragging to change the order of the dimensions in the dimension selector.</p>
+
+<p><strong>Graph view optimization</strong></p>
+
+<p>The graph view has been heavily optimized and should now allow for the display of 100’s of nodes with relatively smooth animation on most computers. Tip: If you want to speed up animation temporarily, try disabling display of labels and/or links in the settings panel.</p>
+
+<p><strong>Dimension chooser dialog updates</strong></p>
+
+<p>The modal dialog that allows selection of dimensions to display in several of the views has been revamped to be more compact. This should allow handling data sets with a larger number of dimensions without needing to scroll in this modal dialog.</p>
+
+<p><strong>Map view “fixed-scale” option</strong></p>
+
+<p>The user has the option to set the scale of the map view. This scale will then remain the same when switching between dimensions displayed on the map, allowing a researcher to make valid scale comparisons across dimensions.</p>
+
+<p><strong>Restrictions on facet filter dimensions removed</strong></p>
+
+<p>Previously there were restrictions on the dimensions available in the facet filter based on type of dimensions and the number of values in the dimension. These restrictions have been removed, so it is possible to use any dimension in the facet filter. Some formatting issues remain, which we hope to address in the next release.</p>
+
+<h2 id="bug-fixes">Bug Fixes</h2>
+
+<ul>
+  <li>Graph view +/- buttons don’t work</li>
+  <li>Limit the length of the filter display (above the filters)</li>
+  <li>Timeline bug - timeline won’t display for some types of data</li>
+  <li>Changes in the Refine view don’t always trigger a refresh of data in visualizations</li>
+  <li>Timeline miscounts months sometimes (‘01’ is interpreted as February)</li>
+</ul>
+
+<h2 id="known-issues-incomplete-list">Known issues (incomplete list)</h2>
+
+<ul>
+  <li>Timespan filter doesn’t display properly if data contains “end dates” that are before “start dates”</li>
+  <li>Graph view nodes can have 0-size in some circumstances</li>
+  <li>Start page design is not responsive</li>
+  <li>Firefox browser presents issues with loading and saving projects</li>
+  <li>Sorting data alphabetically within the list view does not work</li>
+</ul>
+
+<h2 id="reporting-issues">Reporting issues</h2>
+
+<p>If you find issues or are having trouble getting your data to work in Palladio, please get in touch. This is an ongoing research project and we can use all the feedback we can get.</p>
+
+<p>On Twitter: <a href="http://twitter.com/HDStanford">@HDStanford</a>
+By email: <a href="mailto:palladio@designhumanities.org">palladio@designhumanities.org</a></p>
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

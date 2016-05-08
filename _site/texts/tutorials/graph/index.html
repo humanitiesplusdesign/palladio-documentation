@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>
+      
+        Graph tutorial | Ed.
+      
+    </title>
+
+    <meta name="author" content="{"name"=>"Alex Gil", "url"=>"https://twitter.com/elotroalex", "email"=>"colibri.alex@gmail.com"}" />
+
+    <!-- Description -->
+    
+      <meta name="description" content="Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.">
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="/ed/reveal.js/css/reveal.css"/>
+    
+      <link rel="stylesheet" href="/ed/reveal.js/css/theme/black.css" id="theme"/>
+    
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="/ed/reveal.js/lib/css/zenburn.css"/>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/ed/reveal.js/css/print/pdf.css' : '/ed/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="apple-touch-icon" href="/ed/apple-touch-icon.png" />
+
+    <link rel="canonical" href="http://elotroalex.github.io/ed/texts/tutorials/graph/">
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="">
+###Palladio Graph
+
+Palladio offers a bivariate graph to show associations between two different dimensions. The default is a simple force-directed layout. The strength of Palladio in investigating these associations comes with pairing the graph view with our different filters.
+
+</section>
+<section data-markdown="">
+
+Any of your data dimensions can become a source or target dimension for the graph.
+
+![14graph choose dimension.png](/ed/assets/resources/2F65EC5790FE3AF18DBA47F04EC8CE1D.png)
+
+</section>
+
+<section data-markdown="">
+ 
+Graphed data looks like this.
+
+![15graph.png](/ed/assets/resources/ECB32BBCF0EE91485AB38D9D448CF31D.png)
+</section>
+
+<section data-markdown="">
+
+In that example, the darker nodes belong to the target dimension (medium) because the Highlight box is checked. Note that the nodes with more connections are by default more centrally oriented in the graph view and those with fewer or no connections are on the periphery.
+
+</section>
+
+<section data-markdown="">
+
+You can size nodes according to their connectedness in your data.
+
+![16graph sized nodes.png](/ed/assets/resources/5B482FABA921EBA41941312368B4B7E5.png)
+
+</section>
+
+<section data-markdown="">
+
+Orient your graph spatially by dragging and dropping nodes across the screen.
+
+![FxpAEPPoka.gif](/ed/assets/resources/74F059E732FEA95A2721ADE4F9FC60DF.gif)
+
+</section>
+
+<section data-markdown="">
+
+Investigate multiple dimensions of the data using interactive filters like the Facet Filter shown below.
+
+![graphfacet.png](/ed/assets/resources/6373BADED3C53CA276E9B834B0FD6A1D.png)
+
+</section>
+
+<section data-markdown=""> ##To learn more about using the Timeline, Timespan, and Facet Filters, see our separate tutorials. </section>
+
+<section data-markdown="">
+
+You can also visualize the growth of a single data dimension.
+
+![FCle4zPixL.gif](/ed/assets/resources/6B15FBC90E2DB5BEB094ED96F732C1EB.gif)
+
+</section>
+
+<section data-markdown="">
+
+The filters that you apply carry over to other Palladio views.
+
+![tabulargraph.png](/ed/assets/resources/CBE90A4E4FE42C41D7AA803B0B3ACF2A.png)
+</section>
+
+<section data-markdown="">
+
+To save your graph, download it as a .svg file. 
+
+![downloadgraph.png](/ed/assets/resources/C8376390D5EC21AE1EC1D682287C2E18.png) 
+
+</section>
+
+<section data-markdown="">
+
+Your .svg file can then be edited in a vector graphics editor like Adobe Illustrator or Inkscape.
+
+![downloaded.png](/ed/assets/resources/14FA2FEC1C20F7E68E0CB3E6E96DFB38.png)
+
+</section>
+
+<section data-markdown=""> 
+//see other tutorials or go home
+
+##[Exit](/ed/)</section>
+
+      </div>
+    </div>
+
+    <script src="/ed/reveal.js/lib/js/head.min.js"></script>
+    <script src="/ed/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        
+          transition: 'slide',
+        
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '/ed/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/ed/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/ed/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '/ed/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/ed/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '/ed/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    
+  </body>
+</html>

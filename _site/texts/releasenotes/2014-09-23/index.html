@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/ed/texts/releasenotes/2014-09-23/"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="Palladio Release Notes: 0.7.0" />
+  <meta name="DC.creator" content="Mark Braude" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Ed." />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Palladio Release Notes: 0.7.0"/>
+  <meta property="og:author" content="Mark Braude"/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://elotroalex.github.io"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      Palladio Release Notes: 0.7.0
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/ed/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/ed/public/css/ed.css"/>
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/ed/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/ed/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/ed/atom.xml"/>
+</head>
+
+
+  <body>
+
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/ed/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/credits/">Credits</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/documentation/">Documentation</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/ed/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://elotroalex.github.io/ed/">Annotate me</a>
+    <a class="sidebar-nav-item" href="https://github.com/elotroalex/ed" target="_blank">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v0.0.5</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Distributed with an MIT license.</p>
+  </div>
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/ed/" title="Home">Ed.</a>
+            <br><small>A Jekyll theme for minimal editions</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="narrative">
+  <h1 class="post-title">Palladio Release Notes: 0.7.0</h1>
+  <!-- <p class="citation"> by Mark Braude</p> -->
+  <!-- date:   2014-09-23 09:00:00
+categories: release-notes
+published: true
+excerpt: "New features and bug fixes in release 0.7.0"
+tags: front -->
+
+<p><em>Release notes 2014-09-23</em></p>
+
+<hr />
+
+<p>The 0.7.0 release of Palladio features an interface for querying SPARQL endpoints, as well as several bug fixes and enhancements, most specifically pertaining to the TimeLine and TimeSpan tools.</p>
+
+<h2 id="new-features">New Features</h2>
+
+<p><strong>SPARQL Support</strong></p>
+
+<p>Palladio now offers SPARQL support, allowing the use of a SPARQL query to load data from a publicly available SPARQL endpoint. An incomplete list of SPARQL endpoints is available <a href="http://www.w3.org/wiki/SparqlEndpoints">here</a>.
+SPARQL loading capability is available on the initial data load as well as in the context of extending tables.</p>
+
+<h2 id="bug-fixes-and-enhancements">Bug Fixes and Enhancements</h2>
+
+<ul>
+  <li>TimeSpan filter allows use of dimensions in any order (previously, the first dimension was required to have dates that always preceded the dates in the second dimension).</li>
+  <li>TimeLine filter now displays the current filter on the large timeline.</li>
+  <li>Initial data loading page now provides all loading options in a consistent tabbed interface.</li>
+  <li>Palladio no longer automatically adds ‘&amp;output=csv’ to Google spreadsheets links, allowing for the loading of any CSV that is available on a server that allows cross-site loading.</li>
+</ul>
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

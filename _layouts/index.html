@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="toc">
+	<h1 class="post-title">{{ page.title }}</h1>
+  	<ul class="post">
+  	{% assign category = page.indexcategory %}
+  	{% for item in site.texts %}
+	  	{% if item.category == category %}  
+		    <li class="post-title">
+		      <a href="{{ site.baseurl }}{{ item.url }}">
+		        {{ item.title }}
+		      </a>
+		    </li>
+	    {% endif %}
+  	{% endfor %}
+  </ul>  
+</div>
