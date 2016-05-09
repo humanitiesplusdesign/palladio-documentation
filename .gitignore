@@ -6,3 +6,5 @@ _data/authors.yml
 public/.DS_Store
 
 .DS_Store
+
+_site/atom.xml
