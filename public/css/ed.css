@@ -109,7 +109,7 @@ body {
 /* links */
 
 a, .post-title a {
-  color: #aa3311;
+  color: rgb(120,176,209);
   text-decoration: none;
 }
 
@@ -374,9 +374,9 @@ h3.masthead-title {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
-  background-color: #202020;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
+  background-color: rgba(70,70,70,1);
+  -webkit-transition: all .6s ease-in-out;
+          transition: all .6s ease-in-out;
 }
 @media (min-width: 30em) {
   .sidebar {
@@ -386,9 +386,6 @@ h3.masthead-title {
 
 /* Sidebar content */
 
-.sidebar {
-  background-color: #841212;
-}
 
 .sidebar a {
   font-weight: normal;
@@ -512,8 +509,8 @@ a.sidebar-nav-item:focus {
 }
 .wrap,
 .sidebar-toggle {
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-          transition: transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+          transition: transform .6s ease-in-out;
 }
 
 #sidebar-checkbox:checked + .sidebar {

@@ -7,4 +7,16 @@ public/.DS_Store
 
 .DS_Store
 
-_site/atom.xml
+_site/*
+
+_site/404.html
+
+_site/404.html
+
+_site/about/index.html
+
+_site/assets/screenshot-home.png
+
+_site/releasenotes/2015-06-12/index.html
+
+_site/releasenotes/2015-01-27/index.html
