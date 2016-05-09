@@ -24,24 +24,14 @@ html {
 	text-align: center;
 	padding-top: .8rem;
 	padding-bottom: .8rem;
-  border-bottom: 1px solid #eee;
-}
-
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050;
-  line-height: 1.5rem;
-}
-.masthead-title a {
-	color: #aa3311;
+  border-bottom: none;
 }
 
 .masthead-title small {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 300;
+  color: #222;
+  font-family: roboto slab, serif;
   font-size: 1rem;
-  font-weight: 400;
-  color: #c0c0c0;
   letter-spacing: 0;
 }
 
