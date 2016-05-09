@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 <div class="introduction">
-  <h1>Documentation</h1>
 </div>
 
 <hr>
@@ -31,6 +30,9 @@ title: Home
     </li>
   {% endfor %}
   </ul>  
+  <h2>FAQs</h2>
+{% capture faq %}{% include faq.md %}{% endcapture %}
+{{ faq | markdownify }}
 </div>
 
 

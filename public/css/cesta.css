@@ -27,11 +27,11 @@ html {
   border-bottom: none;
 }
 
-.masthead-title small {
-  font-weight: 300;
+h3.masthead-title {
+  font-weight: 400;
   color: #222;
   font-family: roboto slab, serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   letter-spacing: 0;
 }
 

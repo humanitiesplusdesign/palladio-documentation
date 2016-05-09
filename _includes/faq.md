@@ -1,7 +1,4 @@
----
-layout: page
-title: Palladio FAQs
----
+
 
  1.  [What is a Palladio project?](#1)  
  2.  [Which data formats work with Palladio?](#2)
@@ -30,7 +27,7 @@ Any collection of information that can be represented in a table format (in othe
 
 Palladio works best with data that is uniform, consistent, and simple. Avoid notes and comments within your data, or any unnecessary diacritics.
 
-*Tip for those using .csv files*: [This 'CSV Fingerprints' tool](http://setosa.io/blog/2014/08/03/csv-fingerprints/) can be very helpful in spotting any mistakes in your .csv files. [Breve](http://breve.designhumanities.org/#/), another tool from the Stanford Humanities + Design Lab, is another tool for visualizing the scale, types, and gaps in your data. 
+*Tip for those using .csv files*: [Breve](http://breve.designhumanities.org/#/), another tool from the Stanford Humanities + Design Lab, will help reveal the scale, types, and gaps in your data. 
 
 You can also build your own tables and bring them into Palladio in three ways:
 
