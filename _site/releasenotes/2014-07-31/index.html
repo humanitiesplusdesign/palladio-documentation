@@ -1,0 +1,65 @@
+<!-- date:   2014-07-31 09:00:00
+categories: release-notes
+published: true
+tags: front
+excerpt: "New features and bug fixes in release 0.6.0" -->
+<p><em>Release notes 2014-07-31</em></p>
+
+<hr />
+
+<h2 id="new-features">New Features</h2>
+
+<p><strong>Redesign</strong></p>
+
+<p>An updated design across the application, including a new start page with extended explanations of functionality.</p>
+
+<p><strong>TimeSpan filter component</strong></p>
+
+<p>A new filter type is introduced that allows visualization and filtering of records based on a start date and an end date. We offer 2 view options in this filter: a horizontal slope chart (the ‘Parallel’ subview), and a Gannt-like view (the ‘Bars ‘subview).</p>
+
+<p><strong>List view changes, and export option</strong></p>
+
+<p>The list view has been reworked to provide a more guided experience, more intuitive display of multiple values, and an option to export the current display as a CSV. When navigating to the list view, a user must now choose a primary row dimension before any data is displayed. Additional dimensions can then be selected to display as informational columns. Columns can be reordered by dragging to change the order of the dimensions in the dimension selector.</p>
+
+<p><strong>Graph view optimization</strong></p>
+
+<p>The graph view has been heavily optimized and should now allow for the display of 100’s of nodes with relatively smooth animation on most computers. Tip: If you want to speed up animation temporarily, try disabling display of labels and/or links in the settings panel.</p>
+
+<p><strong>Dimension chooser dialog updates</strong></p>
+
+<p>The modal dialog that allows selection of dimensions to display in several of the views has been revamped to be more compact. This should allow handling data sets with a larger number of dimensions without needing to scroll in this modal dialog.</p>
+
+<p><strong>Map view “fixed-scale” option</strong></p>
+
+<p>The user has the option to set the scale of the map view. This scale will then remain the same when switching between dimensions displayed on the map, allowing a researcher to make valid scale comparisons across dimensions.</p>
+
+<p><strong>Restrictions on facet filter dimensions removed</strong></p>
+
+<p>Previously there were restrictions on the dimensions available in the facet filter based on type of dimensions and the number of values in the dimension. These restrictions have been removed, so it is possible to use any dimension in the facet filter. Some formatting issues remain, which we hope to address in the next release.</p>
+
+<h2 id="bug-fixes">Bug Fixes</h2>
+
+<ul>
+  <li>Graph view +/- buttons don’t work</li>
+  <li>Limit the length of the filter display (above the filters)</li>
+  <li>Timeline bug - timeline won’t display for some types of data</li>
+  <li>Changes in the Refine view don’t always trigger a refresh of data in visualizations</li>
+  <li>Timeline miscounts months sometimes (‘01’ is interpreted as February)</li>
+</ul>
+
+<h2 id="known-issues-incomplete-list">Known issues (incomplete list)</h2>
+
+<ul>
+  <li>Timespan filter doesn’t display properly if data contains “end dates” that are before “start dates”</li>
+  <li>Graph view nodes can have 0-size in some circumstances</li>
+  <li>Start page design is not responsive</li>
+  <li>Firefox browser presents issues with loading and saving projects</li>
+  <li>Sorting data alphabetically within the list view does not work</li>
+</ul>
+
+<h2 id="reporting-issues">Reporting issues</h2>
+
+<p>If you find issues or are having trouble getting your data to work in Palladio, please get in touch. This is an ongoing research project and we can use all the feedback we can get.</p>
+
+<p>On Twitter: <a href="http://twitter.com/HDStanford">@HDStanford</a>
+By email: <a href="mailto:palladio@designhumanities.org">palladio@designhumanities.org</a></p>

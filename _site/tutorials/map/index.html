@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/tutorials/map/"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="Map Tutorial" />
+  <meta name="DC.creator" content="" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Palladio" />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Map Tutorial"/>
+  <meta property="og:author" content=""/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      Map Tutorial
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/public/css/cesta.css"/>
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/ed.css"/>
+
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"/>
+</head>
+
+
+  <body>
+    
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Palladio is developed at Humanities + Design, Stanford University.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/FAQS/">Palladio FAQs</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/credits/">Credits</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/">Annotate me</a>
+    <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio" target="_blank">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.1.4</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Distributed with an MIT license.</p>
+  </div>
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="org"><a href="http://www.stanford.edu">Stanford</a> | CESTA</div>
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Palladio</a>
+            <br><small>Visualize complex historical data with ease.</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Map Tutorial</h1>
+  <section data-markdown="">
+###Palladio Map
+</section>
+
+<section data-markdown="">
+We’ll start with point data.
+
+![30map options.png](/assets/resources/30map options.png)
+</section>
+
+<section data-markdown="">
+The data will show up on your map like this. 
+
+![31mapped.png](/assets/resources/00BA080F3C2DF8142A59378963EFF091.png)
+</section>
+
+<section data-markdown="">
+You can see specific data points by hovering.
+
+![32map tooltip.png](/assets/resources/ACEB29FD9A03E241D2D9EEEDCCAB77E5.png)
+</section>
+
+<section data-markdown="">
+Edit your data layers by clicking on the edit button. 
+
+![35edit layers.png](/assets/resources/83494BF8FE69BD6E5090B85188DCC4C5.png)
+</section>
+
+<section data-markdown="">
+You can specify which dimension is used to label the points (tooltip). 
+
+![maptooltip.png](/assets/resources/28F5DDECBD221F652EA463AFD48DD750.png)
+</section>
+
+<section data-markdown="">
+When we first plotted the points, they were sized by items per location. If we uncheck that option, we can focus our attention on the unique locations.
+
+![30map options.png](/assets/resources/E0AF5F4DFC95F23BE188ADF9168FF081.png)
+</section>
+
+<section data-markdown="">
+Unsized data looks like this. 
+
+![37without sized points.png](/assets/resources/244B25A8F4D53E17B012ABE2620B5DC1.png)
+</section>
+
+<section data-markdown="">
+There are a number of basemap layers to choose from. 
+
+![33tile options.png](/assets/resources/108B514DAF2A8C712D3AF96C9B8BA504.png)
+</section>
+
+<section data-markdown="">
+ We’ve added satellite imagery as a tile layer.
+
+![34map satellite.png](/assets/resources/934C949BBAB271B8654B67D5B2777765.png)
+ </section>
+
+<section data-markdown="">
+Investigate multiple dimensions of the data using interactive filters like the Timeline shown below. 
+
+![mapp.gif](/assets/resources/AE31F2F0A339E999C9CE37CDF4377321.gif)
+</section>
+
+<section data-markdown=""> ##To learn more about using the Timeline, Timespan, and Facet Filters, see our separate tutorials. </section>
+
+<section data-markdown="">
+Another mapping option is Point to Point, which requires two sets of place data (birthplaces and deathplaces in this example).
+
+![pointtopoint.png](/assets/resources/950AEF62535A106279774B4F8476C2C1.png)
+</section>
+
+<section data-markdown="">
+Here you can see the paths between birthplace (source) and death place (target). The clockwise arc of the line indicates the direction of the relationship.
+
+![clockwise.png](/assets/resources/8954CD1F7BF12B9A3B8B5E4F98C983CA.png)
+</section>
+
+<section data-markdown="">
+You can add multiple data layers and choose the color.
+
+![color.png](/assets/resources/801B2F0DD1C3BB2D398A6196847E4095.png)
+</section>
+
+<section data-markdown="">
+In this map, we’ve assigned red to birthplaces to more easily distinguish them from death places.
+![differentcolors.png](/assets/resources/8F3258BFFFA6C39FF3890A6A5FB037F9.png)
+
+With this view, you can more easily follow the arc between birthplace and death place.
+</section>
+
+<section data-markdown="">
+![viewbothzoom.png](/assets/resources/BBCF15BF46A367EF19ACD00AA485BAB6.png)</section>
+
+<section data-markdown="">
+###Palladio Map
+</section>
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

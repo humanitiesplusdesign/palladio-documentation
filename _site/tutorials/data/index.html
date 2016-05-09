@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/tutorials/data/"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="How to load data into Palladio" />
+  <meta name="DC.creator" content="" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Palladio" />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="How to load data into Palladio"/>
+  <meta property="og:author" content=""/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000"/>
+  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      How to load data into Palladio
+    
+  </title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/public/css/cesta.css"/>
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/ed.css"/>
+
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"/>
+</head>
+
+
+  <body>
+    
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Palladio is developed at Humanities + Design, Stanford University.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/FAQS/">Palladio FAQs</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/credits/">Credits</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/search/">Search</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/">Annotate me</a>
+    <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio" target="_blank">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.1.4</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Distributed with an MIT license.</p>
+  </div>
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="org"><a href="http://www.stanford.edu">Stanford</a> | CESTA</div>
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Palladio</a>
+            <br><small>Visualize complex historical data with ease.</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">How to load data into Palladio</h1>
+  <p>You can load data into Palladio in a number of ways.
+Here, we’ve dragged a .csv file into the box. You can also copy and paste your data, or type directly into the box.</p>
+
+<p><img src="http://localhost:4000/assets/resources/CCA953052BB0485A2C6F75A3D36E6A8E.png" alt="1loadingfile.png" /></p>
+
+<p>Data loaded from a file should look like this.</p>
+
+<p><img src="http://localhost:4000/assets/resources/9D91FDA048353B3B13A2C97B1EE3EAD0.png" alt="2loadingdata.png" /></p>
+
+<p>When your data is initially loaded into Palladio, you may see a number of your data dimensions flagged for review with a red dot.</p>
+
+<p><img src="http://localhost:4000/assets/resources/5157C75F563570400BAA24D02BD3130E.png" alt="3initiallyloaded.png" /></p>
+
+<p>Click on the dimension to review.
+<img src="http://localhost:4000/assets/resources/4127AF986D2E9C472B590710CBC4C0FA.png" alt="4search special characters.png" /></p>
+
+<p>Here, Palladio has flagged special characters that may or may not be intentional. Click on the character to filter the values and review them for accuracy. If you see a problem in your data, you can edit it outside of Palladio and reload the data. When you’ve checked each flagged character, the red dot will disappear.</p>
+
+<p>Sometimes, your data may contain multiple values within one cell.
+In this data, many pieces of art are made with more than one medium.</p>
+
+<p><img src="http://localhost:4000/assets/resources/C2FB570D1D5A1E9CA00BBE9B932E4D86.png" alt="beforemult.png" /></p>
+
+<p>Use the Multiple Values Delimiter to let Palladio know these values should be read as separate entries. You can use any string as a delimiter so long as it is consistent within that dimension.
+<img src="http://localhost:4000/assets/resources/48807D71B21353E3B3E58AC76578FBF4.gif" alt="multiplevalues.gif" /></p>
+
+<p>Use the Edit Dimension view to see how often a value appears in your data.
+The number on the side of each entry indicates its frequency.</p>
+
+<p><img src="http://localhost:4000/assets/resources/4810CBE2B5DFC39137CF50DF02EFD805.png" alt="8sort by frequency title.png" /></p>
+
+<p>You can also choose to sort your data by value.</p>
+
+<p><img src="http://localhost:4000/assets/resources/9D421AF6831270278BA65019A3CA6CB8.png" alt="9sort by value title.png" /></p>
+
+<p>Another way to review your data is to search for values within a dimension.</p>
+
+<p><img src="http://localhost:4000/assets/resources/854D21D0E710EE8589CA86013AA9F55A.png" alt="search.png" /></p>
+
+<p>The grey icons indicate that each dimension has been verified.</p>
+
+<p><img src="http://localhost:4000/assets/resources/6400D666F5026862AFB21FA0CA81538F.png" alt="10after character review.png" /></p>
+
+<p>Palladio automatically assigns each dimension a data type.
+Here, you can see that Palladio reads “accession date” as a Number.</p>
+
+<p><img src="http://localhost:4000/assets/resources/7547DC07F4491313547F5A8F516F45A5.png" alt="11see how it's a number.png" /></p>
+
+<p>Click to edit a dimension and change its data type.</p>
+
+<p><img src="http://localhost:4000/assets/resources/0BCE4A9AAC2A352F125A47C2A75F0B64.png" alt="12change to date.png" /></p>
+
+<p>If there is a dimension of your data that you do not want to include in your Palladio project, you can disable it. 
+Disabled dimensions can be enabled again at any time.</p>
+
+<p><img src="http://localhost:4000/assets/resources/056E2763B326F15431F9D7C99B10C9C0.png" alt="disable.png" /></p>
+
+<p>Add titles to your tables and data.</p>
+
+<p><img src="http://localhost:4000/assets/resources/D19BA137C6F48C3B37FB4208B3D8E8AF.png" alt="13changed.png" /></p>
+
+<p>Once you’ve finished the review process, it may be helpful to download your Palladio project to simply upload for future use.</p>
+
+<p>Palladio does not store your data, so each project lasts only as long as your browser session unless you download it.</p>
+
+<h3 id="notes">Notes:</h3>
+
+<p>The review process can be skipped entirely, but it is important to review your data before beginning your Palladio project.</p>
+
+<p>Palladio needs to be able to read your data types properly in order to use features like mapping coordinates or filtering by timeline and timespan.</p>
+
+<p>The multiple values delimiter and special characters search can help you make sure your data is as clean as possible before the Palladio visualization process.</p>
+
+
+</div>
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
