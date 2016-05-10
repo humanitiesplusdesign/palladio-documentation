@@ -26,7 +26,7 @@
   <meta property="og:book:release_date" content=""/>
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://localhost:4000"/>
-  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+  <meta property="og:image" content="http://humanitiesplusdesign.github.io/palladio/public/apple-touch-icon-precomposed.png"/>
    
   <title>
     
@@ -35,10 +35,14 @@
   </title>
 
   <!-- CSS links -->
-  <link rel="stylesheet" href="/public/css/cesta.css"/>
-  <link rel="stylesheet" href="/public/css/syntax.css"/>
-  <link rel="stylesheet" href="/public/css/ed.css"/>
 
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/cesta.css"/>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700"/>
+  <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,700italic,900,900italic"/>
  
 
   <!-- Icons -->
@@ -62,6 +66,7 @@
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <p>Palladio is developed at Humanities + Design, Stanford University.</p>
+    <p>Currently v1.1.4</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -81,12 +86,6 @@
     
       
         
-          <a class="sidebar-nav-item" href="/FAQS/">Palladio FAQs</a>
-        
-      
-    
-      
-        
           <a class="sidebar-nav-item" href="/about/">About</a>
         
       
@@ -100,6 +99,18 @@
       
     
       
+        
+          <a class="sidebar-nav-item" href="/documentation/">Tutorials and FAQs</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/releasenotes/">Release Notes</a>
+        
+      
     
       
         
@@ -107,12 +118,19 @@
         
       
     
+      
+        
+          <a class="sidebar-nav-item" href="/testimonials/">Testimonials</a>
+        
+      
+    
 
     <!-- The code below is used for manually entered links  -->
 
-    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/">Annotate me</a>
+
     <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio" target="_blank">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v1.1.4</span>
+    <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio/issues">Create an issue</a>
+        <a class="sidebar-nav-item" href="http://palladio.designhumanities.org">Launch Palladio App</a>
   </nav>
 
   <div class="sidebar-item">
@@ -125,114 +143,62 @@
 
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
-    <div class="org"><a href="http://www.stanford.edu">Stanford</a> | CESTA</div>
+    <div class="org"><a class="main" href="http://www.stanford.edu">Stanford</a> | <a class="lab" href="http://hdlab.stanford.edu">Humanities + Design</a></div>
     <div class="wrap">
       <div class="masthead">
         <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Palladio</a>
-            <br><small>Visualize complex historical data with ease.</small>
+          <a href="/" title="Home"><img src="http://localhost:4000/public/apple-touch-icon-120x120.png" /></a>
+          <h3 class="masthead-title">Palladio. Visualize complex historical data with ease.
           </h3>
+          <div class="button">Start &#187;</div>
         </div>
       </div>
 
-      <div class="container content">
-        <div class="introduction">
-  <h1>Documentation</h1>
-</div>
+      <div class="content">
+        <section class="first">
+    <h2>What can I do with Palladio?</h2>
+    <div class="wide-container">
+    <img src="http://localhost:4000/assets/upload.jpg"/>
+    <h3>Create or Open Palladio projects</h3>
+    <p>Copy and paste out of your spreadsheets, drag-and-drop to upload tabular data (e.g. .csv, .tab, .tsv), or link to a file in a public Dropbox folder to create a new Palladio project.</p>
 
-<hr>
+    </div>
+</section>
 
-<div class="toc">
-  <h2>Tutorials</h2>
-  <ul class="post">
-  
-  
-    <li class="post-title">
-      <a href="/tutorials/data/">
-        How to load data into Palladio
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/tutorials/graph/">
-        Create a Bivariate Graph
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/tutorials/map/">
-        Create a Map
-      </a>
-    </li>
-  
-  </ul>  
-  <h2>Release Notes</h2>
-  <ul class="post">
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2014-04-16/">
-        Palladio Release: Load and Save
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2014-06-30/">
-        On Palladio - From our Lead Developer
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2014-07-31/">
-        Palladio Release Notes: 0.6.0
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2014-09-23/">
-        Palladio Release Notes: 0.7.0
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2014-11-18/">
-        Palladio Release Notes: 0.8.0
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2015-01-27/">
-        Palladio Release Notes: 0.9.0
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2015-06-12/">
-        The Palladio 1.0 Release
-      </a>
-    </li>
-  
-  
-    <li class="post-title">
-      <a href="/releasenotes/2015-10-21/">
-        The Palladio 1.1 Release
-      </a>
-    </li>
-  
-  </ul>  
-</div>
+<section class="second">
+    <div class="wide-container">
+        <img src="http://localhost:4000/assets/map-view.jpg"/>
+        <h3>Visualize your data</h3>
 
+        <p>In the Map view, you can see any coordinates data as points on a map. Relationships between distinct points can be connected by lines, with the arc of the line representing the flow of the relationship.</p>
 
+        <p>Points on the map can be sized to represent their relative magnitude within your data. With the map’s tooltip function you can select which information will be displayed when hovering over a specific point on the map. Zoom in and out using the + and – buttons. Export the nodes and links of Map visualizations (though not the Map background itself) as .svg files.</p>
 
+    </div>
+</section>
+
+<section class="first">
+    <div class="wide-container">
+        <img src="http://localhost:4000/assets/graph-view.jpg"/>
+        <p>In the Graph view, you can visualize the relationships between any two dimensions of your data. Graph information will be displayed as nodes connected by lines. Nodes can be scaled to reflect their relative magnitude within your data. The display of links and labels can be toggled on and off. Export Graph visualizations as .svg files.</p>
+
+    </div>
+</section>
+
+<section class="second">
+    <div class="wide-container">
+        <img src="http://localhost:4000/assets/list-view.jpg"/>
+        <p>In the List view, dimensions of your data can be arranged to make customized lists. Export List visualizations as .csv files.</p>
+
+    <div>
+</section>
+
+<section class="first">
+    <div class="wide-container">
+        <img src="http://localhost:4000/assets/gallery-view.jpg"/>
+        <p>In the Gallery view, data can be displayed within a grid setting for quick reference. Here dimensions of your data can also be linked to outside web-based information. Sort your data according to different dimensions.</p>
+    </div>
+</section>
 
       </div>
     </div>

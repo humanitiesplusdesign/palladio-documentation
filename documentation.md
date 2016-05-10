@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Documentation
+title: Tutorials and FAQs
 ---
 <div class="introduction">
 </div>
@@ -11,17 +11,6 @@ title: Documentation
   <h2>Tutorials</h2>
   <ul class="post">
   {% for item in site.tutorials do %}
-  
-    <li class="post-title">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ item.title }}
-      </a>
-    </li>
-  {% endfor %}
-  </ul>  
-  <h2>Release Notes</h2>
-  <ul class="post">
-  {% for item in site.releasenotes do %}
   
     <li class="post-title">
       <a href="{{ site.baseurl }}{{ item.url }}">

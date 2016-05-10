@@ -26,7 +26,7 @@
   <meta property="og:book:release_date" content=""/>
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://localhost:4000"/>
-  <meta property="og:image" content="http://elotroalex.github.io/ed/public/apple-touch-icon-precomposed.png"/>
+  <meta property="og:image" content="http://humanitiesplusdesign.github.io/palladio/public/apple-touch-icon-precomposed.png"/>
    
   <title>
     
@@ -35,10 +35,14 @@
   </title>
 
   <!-- CSS links -->
-  <link rel="stylesheet" href="/public/css/cesta.css"/>
-  <link rel="stylesheet" href="/public/css/syntax.css"/>
-  <link rel="stylesheet" href="/public/css/ed.css"/>
 
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/cesta.css"/>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700"/>
+  <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,700italic,900,900italic"/>
  
 
   <!-- Icons -->
@@ -62,6 +66,7 @@
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <p>Palladio is developed at Humanities + Design, Stanford University.</p>
+    <p>Currently v1.1.4</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -81,12 +86,6 @@
     
       
         
-          <a class="sidebar-nav-item" href="/FAQS/">Palladio FAQs</a>
-        
-      
-    
-      
-        
           <a class="sidebar-nav-item active" href="/about/">About</a>
         
       
@@ -100,6 +99,18 @@
       
     
       
+        
+          <a class="sidebar-nav-item" href="/documentation/">Tutorials and FAQs</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/releasenotes/">Release Notes</a>
+        
+      
     
       
         
@@ -107,12 +118,19 @@
         
       
     
+      
+        
+          <a class="sidebar-nav-item" href="/testimonials/">Testimonials</a>
+        
+      
+    
 
     <!-- The code below is used for manually entered links  -->
 
-    <a class="sidebar-nav-item" href="https://via.hypothes.is/http://localhost:4000/">Annotate me</a>
+
     <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio" target="_blank">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v1.1.4</span>
+    <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio/issues">Create an issue</a>
+        <a class="sidebar-nav-item" href="http://palladio.designhumanities.org">Launch Palladio App</a>
   </nav>
 
   <div class="sidebar-item">
@@ -125,22 +143,37 @@
 
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
-    <div class="org"><a href="http://www.stanford.edu">Stanford</a> | CESTA</div>
+    <div class="org"><a class="main" href="http://www.stanford.edu">Stanford</a> | <a class="lab" href="http://hdlab.stanford.edu">Humanities + Design</a></div>
     <div class="wrap">
       <div class="masthead">
         <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">Palladio</a>
-            <br><small>Visualize complex historical data with ease.</small>
+          <a href="/" title="Home"><img src="http://localhost:4000/public/apple-touch-icon-120x120.png" /></a>
+          <h3 class="masthead-title">Palladio. Visualize complex historical data with ease.
           </h3>
+          <div class="button">Start &#187;</div>
         </div>
       </div>
 
-      <div class="container content">
-        <div class="page">
+      <div class="content">
+        <div class="container">
+<div class="page">
   <h1 class="page-title">About</h1>
-  
+  <p>Palladio is a product of the <a href="http://www.neh.gov/divisions/odh/grant-news/announcing-6-digital-humanities-implementation-grant-awards-july-2013">NEH Implementation grant</a> (July 2013-June 2016), Networks in History: Data-driven tools for analyzing relationships across time. Our goal was to understand how to design graphical interfaces based on humanistic inquiry. We oriented the project around the development of a general-purpose suite of visualization and analytical tools based on the prototypes created for the <a href="http://republicofletters.stanford.edu">Mapping the Republic of Letters</a> project, which examines the scholarly communities and networks of knowledge during the period 1500-1800.</p>
 
+<p><img src="http://localhost:4000/assets//rofl_panorama_sm.jpg" alt="Panorama collage by Michele Graffieti" /></p>
+
+<h2 id="modeling-historical-data-to-understand-the-past">Modeling Historical Data to Understand the Past</h2>
+
+<p>In 2009, students in Jeff Heer’s CS448b Data Visualization class at Stanford produced an award-winning interactive visualization tool for the “Mapping the Republic of Letters” project that let historians explore 17th and 18th century correspondence in a novel way. Early modern communication networks previously only imagined in the minds of historians could now be seen graphically as pulsing arteries connecting the centers of Enlightenment thought. For the Stanford team of four core humanities faculty, tens of graduate students, and numerous international partners, the tool offered exciting new possibilities for producing knowledge. Many cited it as an example of data visualization transforming historical research. But it is the way the visualization failed to help us answer actual research questions that made us realize that we needed become actively engaged in the design of tools. 
+<img src="http://localhost:4000/assets//rplviz.png" alt="Earliest correspondence visualization" /></p>
+
+<p>Later that year we were awarded a <a href="http://diggingintodata.org/awards/2009/project/digging-enlightenment-mapping-republic-letters">Digging Into Data</a> grant in collaboration with Robert McNamee’s <a href="http://www.e-enlightenment.com/">Electronic Enlightenment Project</a> and Chris Weaver, developer of <a href="http://www.cs.ou.edu/~weaver/improvise/index.html">Improvise</a>. Since ours was an early modern project, we looked immediately to Athanasius Kircher (the subject of one of our case studies), Joseph Priestley, and William Playfair for inspiration, but also to concurrent projects like Moritz Stefaner’s Well-Formed Eigenfactor. At the Stanford lab, we worked closely with a number of information and visual designers including Scott Murray, Jesse Kriss, and Elijah Meeks. Developments out of the Stanford Vis Group, specifically Protovis (and, later, D3.js), allowed us to think very freely about how to give graphical form to our heterogenous, idiosyncratic, and multi-dimensional data rather than trying to squeeze meaning out of tools built around statistical analysis. With the award of an NEH grant, we began a partnership with DensityDesign research lab where we were fortunate to find a kindred spirit, Giorgio Caviglia, whose own research interest in uncertainty and complexity complemented our own. For the next four years of the seven-year project, Giorgio worked almost continuously in our lab at Stanford, first while a PhD candidate and later as a Postdoctoral researcher. This sustained interdisciplinary engagement was essential to our success in building a graphical interface for data-driven historical research.</p>
+
+<p>We developed several prototype visualizations in an attempt to match graphical interfaces to humanistic methods, with the NEH Implementation grant, finally arriving at the integrated application Palladio. One of those prototype tools, Shuffle, was developed by Ethan Jewett, who became the lead developer of Palladio. The figure below shows how we extracted from our prototype tools the graphic views of data that were the most effective and brought those elements together in one multi-faceted tool. What is missing from the diagram is the experience of using the tool. Palladio is tool for reflective practice. It is an environment that supports thinking through data. Like so many historical sources, the correspondence metadata at the heart of “Mapping the Republic of Letters” is incomplete in unpredictable ways. Historians work with fragments of information from the past, not complete data sets. The discipline does not offer models against which to test hypotheses. Instead, tools need to support scholars in building an understanding of the historical material through working with it. To create Palladio, we had to externalize what is a very internal, individual, thought process.</p>
+
+<p><img src="http://localhost:4000/assets//palladio_evol.png" alt="Showing the distillation of many tools to fundamental views" title="Prototype Tools" /></p>
+
+</div>
 </div>
 
       </div>

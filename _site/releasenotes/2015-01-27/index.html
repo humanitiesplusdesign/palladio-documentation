@@ -1,4 +1,164 @@
-<!-- date: 2015-01-27 11:34:22
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Canonical link to help search engines -->
+  <link rel="canonical" href="/releasenotes/2015-01-27/"/>
+
+  <!-- Basic meta elements -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+
+  <!--   Dublin Core metadata for Zotero -->  
+  <meta name="DC.title" content="Palladio Release Notes: 0.9.0" />
+  <meta name="DC.creator" content="Mark Braude" />
+  <meta name="DC.contributor" content="" />
+  <meta name="DC.date" content="" />
+  <meta name="DC.rights" content="" />
+  <meta name="DC.source" content="Palladio" />
+  
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Palladio Release Notes: 0.9.0"/>
+  <meta property="og:author" content="Mark Braude"/>
+  <meta property="og:book:release_date" content=""/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000"/>
+  <meta property="og:image" content="http://humanitiesplusdesign.github.io/palladio/public/apple-touch-icon-precomposed.png"/>
+   
+  <title>
+    
+      Palladio Release Notes: 0.9.0
+    
+  </title>
+
+  <!-- CSS links -->
+
+  <link rel="stylesheet" href="/public/css/syntax.css"/>
+  <link rel="stylesheet" href="/public/css/cesta.css"/>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700"/>
+  <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,700italic,900,900italic"/>
+ 
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/apple-touch-icon-precomposed.png"/>
+  <link rel="shortcut icon" href="/public/favicon.ico"/>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"/>
+</head>
+
+
+  <body>
+    
+    <!-- This if statement decides which sidebar to use -->
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Palladio is developed at Humanities + Design, Stanford University.</p>
+    <p>Currently v1.1.4</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/credits/">Credits</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/documentation/">Tutorials and FAQs</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/releasenotes/">Release Notes</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/search/">Search</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/testimonials/">Testimonials</a>
+        
+      
+    
+
+    <!-- The code below is used for manually entered links  -->
+
+
+    <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio" target="_blank">GitHub project</a>
+    <a class="sidebar-nav-item" href="https://github.com/humanitiesplusdesign/palladio/issues">Create an issue</a>
+        <a class="sidebar-nav-item" href="http://palladio.designhumanities.org">Launch Palladio App</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>Distributed with an MIT license.</p>
+  </div>
+</div>
+
+    
+
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+    <div class="org"><a class="main" href="http://www.stanford.edu">Stanford</a> | <a class="lab" href="http://hdlab.stanford.edu">Humanities + Design</a></div>
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <a href="/" title="Home"><img src="http://localhost:4000/public/apple-touch-icon-120x120.png" /></a>
+          <h3 class="masthead-title">Palladio. Visualize complex historical data with ease.
+          </h3>
+          <div class="button">Start &#187;</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="container">
+<div class="page">
+  <h1 class="page-title">Palladio Release Notes: 0.9.0</h1>
+  <!-- date: 2015-01-27 11:34:22
 categories: release-notes
 published: true
 tags: front
@@ -39,3 +199,31 @@ excerpt: "New features and bug fixes in release 0.9.0" -->
   <li>Allow downloading of tables in the data view.</li>
   <li>Multi-file support. One Palladio instance can host and load multiple save files based on the URL</li>
 </ul>
+
+</div>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
