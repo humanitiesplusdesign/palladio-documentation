@@ -307,9 +307,7 @@ tbody tr:nth-child(odd) th {
   color: #505050;
   line-height: 1.5rem;
 }
-.masthead-title a {
-	color: #aa3311;
-}
+
 
 .masthead-title small {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;

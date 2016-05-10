@@ -1,0 +1,116 @@
+html {
+  font-family: 'karla', 'source sans pro', helvetica, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.org a {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0;
+	color: #aa3311;
+}
+
+a.lab {
+  font-family: 'karla', 'source sans pro', helvetica, arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 0.025;
+	color: rgb(45,45,45);
+  text-transform: uppercase;
+}
+
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+	margin-bottom: 3rem;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: .8rem;
+  border-bottom: none;
+}
+
+h3.masthead-title {
+  font-weight: 400;
+  color: #222;
+  font-family: roboto slab, serif;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}
+
+.masthead img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}
+
+/*
+ * Sections
+ *
+ * Page-wide blocks of color
+ *
+ */
+
+section.first, section.second {
+  display:block;
+  width:100%;
+  color: rgba(233,233,233,.6);
+  margin:0;
+  padding:0;
+  min-height:48rem;
+  font-size:.8rem;
+  margin-top:-3em;
+}
+
+section.first {
+  background-color:rgb(70,70,70);
+}
+
+section.second {
+  background-color:rgb(86,86,86);
+}
+
+section h2 {
+  text-align: center;
+  color: rgba(233,233,233,1);
+  font-size:1rem;
+  padding:3rem;
+}
+
+section h3 {
+  color: rgba(233,233,233,1);
+  font-size:.8rem;
+}
+
+section img {
+  width:48rem;
+  float:right;
+  margin-left:3rem;
+}
+
+.wide-container {
+  max-width: 68rem;
+  padding-top:6rem;
+  margin-right:  auto;
+  margin-left: auto;
+}
+
+
+
+
