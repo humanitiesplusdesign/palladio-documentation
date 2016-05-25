@@ -1,5 +1,3 @@
-
-
  1.  [What is a Palladio project?](#1)  
  2.  [Which data formats work with Palladio?](#2)
  3. [What does it mean if I see a red icon and ‘Please review’ in one of my dimensions?](#3)
@@ -27,7 +25,7 @@ Any collection of information that can be represented in a table format (in othe
 
 Palladio works best with data that is uniform, consistent, and simple. Avoid notes and comments within your data, or any unnecessary diacritics.
 
-*Tip for those using .csv files*: [Breve](http://breve.designhumanities.org/#/), another tool from the Stanford Humanities + Design Lab, will help reveal the scale, types, and gaps in your data. 
+*Tip for those using .csv files*: [Breve](http://breve.designhumanities.org/#/), another tool from the Stanford Humanities + Design Lab, can help you visualie the scale, types, and gaps in your data as you clean it. 
 
 You can also build your own tables and bring them into Palladio in three ways:
 
@@ -43,7 +41,7 @@ The first row in your data will be parsed as a header. This means that the first
 
 So, a table column of people's names would have 'Names' as its first row and then dimensions, such as 'John Doe' and 'Jane Smith' in the rows below. Palladio cannot properly access and reference the different dimensions in your data unless you follow this format.
 
-Each column header must be unique from the other. Within a header name you may use letters, spaces, and numbers. Do not use any special alphanumeric characters, such as underscores '_' or dashes '-', as these will confuse Palladio.
+Each column header must be unique from the other.
 
 Examples of data:
 
@@ -83,28 +81,33 @@ Note that empty rows in your data will be ignored by Palladio.
 
 Palladio does not work with unstructured data, such as one long string of text, but only with data that has been placed into some kind of table. The richest uses of Palladio comes from having several different related tables of information, however many users will start with just one single table.
 
+See our [tutorial on data]({{site.baseurl}}/tutorials/data) to learn more.
 
 ## <a name="3"></a>What does it mean if I see a red icon and ‘Please review’ in one of my dimensions?
 
 This is Palladio's way of telling you that there could be errors in your data. Palladio notices if there are non-standard alpha-numerical characters in your data. These special characters may either lead to errors, or (in the case of commas or semicolons used to separate values in a given dimension) these special characters may be of help for you to use advanced tools such as the Multiple-Values Delimiter.
 Palladio could also be telling you that not all of your data seems to be of the same type. 
 
+See our [tutorial on data]({{site.baseurl}}/tutorials/data) to learn more.
+
 ## <a name="4"></a>What is a Multiple Values Delimiter?
 
 Your tabular data is made up of various dimensions (ie. individual cells in a spreadsheet). In some cases you may want to assign more than one value for a certain dimension. For instance, you may have a column describing someone's 'Position.' The column could be filled Princes, Popes, and Poets. But what if your Prince was also a Pope? In this case you could enter 'Prince, Pope' in one single cell of your table. Now, after you’ve uploaded the data into Palladio, you can parse that cell into two unique values. Here's how: In the Multiple Values Delimiter input box, enter the symbol you've used to separate your values, in this case, a comma that separated Pope and Prince. Now Palladio understands that this entry as two separate values.
 
+See our [tutorial on data]({{site.baseurl}}/tutorials/data) to learn more.
+
 ## <a name="5"></a>How should Dates be entered?
 
-Dates should be entered in the following format Year-Month-Day (2014-01-01). Years must always be rendered as four digit integers. Thus years between 0 CE and 1000 CE should still be rendered as 0001 or 0999. Negative dates should follow the same format, but preceded by a minus sign (ie. -200-01-01). If using Excel, be sure to specify that the column reads as "Text" rather than dates, so that Excel doesn't change the dates into its own (non-Palladio friendly) format.
+Dates should be formatted either as Year-Month-Day (2014-01-01) or Year (2014). Years must always be rendered as four digit integers. Thus years between 0 CE and 1000 CE should still be rendered as 0001 or 0999. Negative dates should follow the same format, but preceded by a minus sign (ie. -200-01-01). If using Excel, be sure to specify that the column reads as "Text" rather than dates, so that Excel doesn't change the dates into its own (non-Palladio friendly) format.
+
+See our [tutorial on data]({{site.baseurl}}/tutorials/data) to learn more.
 
 ## <a name="6"></a>How should Coordinates be entered?
 
 Coordinates information must be rendered as latitude and longitude, separated by a comma. For example: 41.95, 12.5.
-This Geocoding tool may be of help for those who have a list of place names but no associated coordinates: 
-http://sandbox.idre.ucla.edu/geocoder/
+There are a variety of Geocoding tools available online in order to connect coordiantes with your data.
 
-See the Scenario: Creating Data for a Simple Map for more information about creating and entering coordinates information. [Download PDF]({{ site.baseurl }}/doc/scenario-simple-map.pdf)
-
+See our [tutorial on data]({{site.baseurl}}/tutorials/data) to learn more.
 
 ## <a name="7"></a>What do the labels (text, date, URL etc.) and numbers listed directly below my dimension represent?
 
@@ -117,6 +120,8 @@ In this case Gender is the header from one column of your data, Text is the data
 Palladio will guess the type of data entered based on its attributes. Data will be recognized as either: Text, Number, Year or Date, Coordinates, URL.
 
 If Palladio ‘guesses’ your data incorrectly you can click on the dimension and in the dropdown menu labeled Data Type, change the type of data specified. The more accurately Palladio defines your data, the better the platform will work.
+
+See our [tutorial on data]({{site.baseurl}}/tutorials/data) to learn more.
 
 
 ## <a name="8"></a>How do I get the most use out of the TimeLine feature?
@@ -146,20 +151,18 @@ The default map view is a blank map. Note the settings panel to the right. You c
 
 The first step is to specify the type of map you'd like to see. To do so, choose from the menus within the settings panel. You can choose from two types of map views: 'Points' or 'Point to Point'. (Note that access to these functions will depend on the kinds of information you've uploaded. You wouldn't, for example, be able to use the 'Point to Point' function unless Palladio recognizes a dataset with more than one type of coordinates column, ie. 'Source City' and 'Destination City.')
 
-####‘Points’ map view
+###‘Points’ map view###
 
 In the 'Points' map view, Palladio can map out a collection of unique locations, based on any coordinates data (longitude, lattitude) you've entered. For instance, if you uploaded a table listing all of the Popes in the last five hundred years, their individual cities of birth, and coordinates data for each of these cities, you might want to see a worldwide view of where Popes have been born in the last five hundred years.
 
 In Points view you can only select one dimension. If you toggle Size points, the sizes of each dot will relates to their frequency within your data. You can specify how you would like to count your data by using the Count By function. Note you can only count by unique tables uploaded in your data. Hovering over specific dots will display corresponding data. You can select which type of data to display on hovering, by using the Tooltip label.
 
-Below the 'Type of Map' menu is a second menu, 'Places.' This menu will be populated with any data for which there are coordinates, and the menu choices will be named for the headers of columns containing coordinates data. For instance, in our Popes dataset set, if the coordinates data in your original table is labeled 'Birth City Coordinates,' then you will be prompted to choose 'Birth City Coordinates' within the 'Places' menu. To see all of your Popes birthplace data on the map, you would select 'Birth Place Coordinates' in the 'Places' menu. Now the map will be populated with dots representing each individual value in your coordinates data.
+Below the 'Type of Map' menu is a second menu, 'Places.' This menu will be populated with any data for which there are coordinates, and the menu choices will be named for the headers of columns containing coordinates data. For instance, if the coordinates data in your original table is labeled 'Birth City Coordinates,' then you will be prompted to choose 'Birth City Coordinates' within the 'Places' menu. To see all of your birthplace data on the map, you would select 'Birth Place Coordinates' in the 'Places' menu. Now the map will be populated with dots representing each individual value in your coordinates data.
 
-See the Scenario: Creating Data for a Simple Map for more information about creating and entering coordinates information.
-
-[Download PDF]({{ site.baseurl }}/doc/scenario-simple-map.pdf)
+See our [tutorial on maps]({{site.baseurl}}/tutorials/map) to learn more.
 
 
-####‘Point-to-Point’ map view
+###‘Point-to-Point’ map view ###
 
 The point to point view give us a node-link map. Here you will select two different dimensions (ie. source city and destination city) and see the links between various points.
 
@@ -167,13 +170,13 @@ The arc of the link between two points represents the direction of the flow. Thi
 
 Now you can explore this Map data in various ways by using the Timeline and Facet Filter functions. You can also use the search bar to filter the data being visualized to accord with whatever parameters you wish, so long as your coordinates data corresponds in some way to whatever you've typed into the search bar. You can also isolate specific points on your map by clicking on them.
 
-See the Scenario: Creating Data for a Point to Point Map for more information about creating and entering coordinates information.
-
-[Download PDF]({{ site.baseurl }}/doc/scenario-point-to-point.pdf)
+See our [tutorial on maps]({{site.baseurl}}/tutorials/map) to learn more.
 
 ## <a name="12"></a>What are Size Points?
 
 Toggling the Size Points function in the map view will change the sizes of your various dots on the map, depending on how frequently they appear in your dataset. So, for instance, if you had a table listing 30 people born in Rome and 1 in Florence, and you have produced a map visualization that counts by people, the dot representing Rome in your map view will be significantly larger than the dot representing Florence. You can adjust the scale of the Size Points (in other words, the  size of the dots as they appear in relation to the map) by toggling the Adjust Scale button.
+
+See our [tutorial on maps]({{site.baseurl}}/tutorials/map) to learn more.
 
 
 ## <a name="13"></a>I would like to export a Map visualization but can only export it as an .svg with dots and lines. What should I do?

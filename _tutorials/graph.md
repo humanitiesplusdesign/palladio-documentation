@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Create a Bivariate Graph
-category: tutorial
+category: tutorials
 ---
-
-
-
 
 Palladio offers a bivariate graph to show associations between two different dimensions. The default is a simple force-directed layout. The strength of Palladio in investigating these associations comes with pairing the graph view with our different filters.
 
@@ -85,10 +82,3 @@ To save your graph, download it as a .svg file.
 Your .svg file can then be edited in a vector graphics editor like Adobe Illustrator or Inkscape.
 
 ![downloaded.png]({{ site.baseurl }}/assets/resources/14FA2FEC1C20F7E68E0CB3E6E96DFB38.png)
-
-
-
- 
-//see other tutorials or go home
-
-##[Exit]({{site.baseurl}}/)

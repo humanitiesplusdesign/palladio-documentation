@@ -100,10 +100,6 @@ Once you’ve finished the review process, it may be helpful to download your Pa
 Palladio does not store your data, so each project lasts only as long as your browser session unless you download it. 
 
 
-
-
-###Notes:
-
 The review process can be skipped entirely, but it is important to review your data before beginning your Palladio project. 
 
 Palladio needs to be able to read your data types properly in order to use features like mapping coordinates or filtering by timeline and timespan. 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create a Map
-category: tutorial
+category: tutorials
 ---
 
 
